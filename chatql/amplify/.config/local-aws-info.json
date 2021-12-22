@@ -1,0 +1,12 @@
+{
+  "chatql": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "amplifyapp"
+  },
+  "dev": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/Users/nakashioshingo/.amplify/awscloudformation/qBaASLrTUn"
+  }
+}

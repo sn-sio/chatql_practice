@@ -1,0 +1,60 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chatql-react-dev-114754-authRole",
+      "UnauthRoleArn": "arn:aws:iam::867255440029:role/amplify-chatql-react-dev-114754-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::867255440029:role/amplify-chatql-react-dev-114754-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-chatql-react-dev-114754-deployment",
+      "UnauthRoleName": "amplify-chatql-react-dev-114754-unauthRole",
+      "StackName": "amplify-chatql-react-dev-114754",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:867255440029:stack/amplify-chatql-react-dev-114754/907e83a0-62d1-11ec-9ed0-0a749ce364c5",
+      "AmplifyAppId": "ddwzri03g798q"
+    }
+  },
+  "auth": {
+    "cognito5a6ec086": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
+    }
+  },
+  "analytics": {
+    "chatqlreact": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "api": {
+    "chatqlreact": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "securityType": "AMAZON_COGNITO_USER_POOLS"
+      }
+    }
+  }
+}
